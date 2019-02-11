@@ -16,6 +16,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".WeChat"
+            android:label="@string/title_activity_we_chat"></activity>
     </application>
 
 </manifest>

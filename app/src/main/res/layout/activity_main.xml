@@ -12,6 +12,7 @@
         android:src="@drawable/head_photo"
         />
     <TextView
+        android:id="@+id/user_zhanghao"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="18391763127"
@@ -38,6 +39,7 @@
     </LinearLayout>
 
     <Button
+        android:id="@+id/landing"
         android:layout_width="370dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
