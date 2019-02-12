@@ -17,14 +17,17 @@ public class WeChat extends AppCompatActivity {
         @Override
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
             switch (item.getItemId()) {
-                case R.id.navigation_home:
-                    mTextMessage.setText(R.string.title_home);
+                case R.id.chats_name:
+                    mTextMessage.setText(R.string.title_chats);
                     return true;
-                case R.id.navigation_dashboard:
-                    mTextMessage.setText(R.string.title_dashboard);
+                case R.id.Contacts_name:
+                    mTextMessage.setText(R.string.title_Contacts);
                     return true;
-                case R.id.navigation_notifications:
-                    mTextMessage.setText(R.string.title_notifications);
+                case R.id.Discover_name:
+                    mTextMessage.setText(R.string.title_Discover);
+                    return true;
+                case R.id.me_name:
+                    mTextMessage.setText(R.string.title_Me);
                     return true;
             }
             return false;

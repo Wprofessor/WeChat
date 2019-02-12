@@ -1,7 +1,8 @@
 <resources>
     <string name="app_name">WeChat</string>
     <string name="title_activity_we_chat">WeChat</string>
-    <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
+    <string name="title_chats">Chats</string>
+    <string name="title_Contacts">Contacts</string>
+    <string name="title_Discover">Discover</string>
+    <string name="title_Me">Me</string>
 </resources>
