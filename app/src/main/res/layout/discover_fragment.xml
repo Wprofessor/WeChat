@@ -45,4 +45,10 @@
             </LinearLayout>
         </LinearLayout>
     </android.support.v7.widget.Toolbar>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    </LinearLayout>
 </LinearLayout>
