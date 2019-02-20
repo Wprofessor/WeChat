@@ -48,6 +48,6 @@ public class MainActivity extends AppCompatActivity {
 
             return true;
         } else
-            return false;        // 为了方便
+            return true;        // 为了方便
     }
 }
