@@ -1,15 +1,19 @@
 package com.example.ewew.wechat;
 
+import android.nfc.Tag;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.MenuItem;
 import android.widget.TextView;
 
 public class WeChat extends AppCompatActivity {
+
+    private String TAG = "WeChat";
 
     private FragmentManager fragmentManager;
     private Fragment chatsFragment;
@@ -28,6 +32,7 @@ public class WeChat extends AppCompatActivity {
                     return true;
                 case R.id.Contacts_name:
                     fragmentManager.beginTransaction().replace(R.id.fragment_container,contactsFragment).commit();
+                    Log.e(TAG,"------------------------");
                     return true;
                 case R.id.Discover_name:
                     fragmentManager.beginTransaction().replace(R.id.fragment_container,discoverFragment).commit();
