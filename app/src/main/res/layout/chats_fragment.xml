@@ -19,24 +19,22 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="WeChat"
                 android:layout_marginLeft="10dp"
-                android:textSize="20sp"
+                android:text="WeChat"
                 android:textColor="#0b0b0b"
-                />
+                android:textSize="20sp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="right"
-                android:orientation="horizontal"
-                >
+                android:orientation="horizontal">
 
                 <ImageView
                     android:layout_width="20dp"
                     android:layout_height="20dp"
-                    android:layout_marginRight="30dp"
                     android:layout_gravity="center"
+                    android:layout_marginRight="30dp"
                     app:srcCompat="@drawable/ic_search" />
 
                 <ImageView
@@ -48,4 +46,9 @@
             </LinearLayout>
         </LinearLayout>
     </android.support.v7.widget.Toolbar>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/chats_recycleview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
 </LinearLayout>

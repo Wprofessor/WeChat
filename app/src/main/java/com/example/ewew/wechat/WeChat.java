@@ -32,7 +32,6 @@ public class WeChat extends AppCompatActivity {
                     return true;
                 case R.id.Contacts_name:
                     fragmentManager.beginTransaction().replace(R.id.fragment_container,contactsFragment).commit();
-                    Log.e(TAG,"------------------------");
                     return true;
                 case R.id.Discover_name:
                     fragmentManager.beginTransaction().replace(R.id.fragment_container,discoverFragment).commit();

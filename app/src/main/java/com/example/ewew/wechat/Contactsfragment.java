@@ -16,15 +16,15 @@ import java.util.List;
 public class Contactsfragment extends Fragment {
     private RecyclerView recyclerView;
     private ContactsAdapter contactsAdapter;
-    private List<contacts_recyle>contacts_recyles = new ArrayList<>();
+    private List<contacts_recyle>contacts_recyles ;
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.contacts_fragment,container,false);
         recyclerView = view.findViewById(R.id.contacts_recycleview);
 
-
-        contactsAdapter = new ContactsAdapter(initData(contacts_recyles),getContext());
+        initData();
+        contactsAdapter = new ContactsAdapter(contacts_recyles,getContext());
         // 设置recyclerview的布局管理器
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
         recyclerView.setAdapter(contactsAdapter);
@@ -32,11 +32,14 @@ public class Contactsfragment extends Fragment {
         return view;
     }
 
-    public List<contacts_recyle> initData(List<contacts_recyle> contacts_recyles){
+    public void initData(){
+        contacts_recyles = new ArrayList<>();
         contacts_recyles.add(new contacts_recyle(R.drawable.ic_new_friends,"New Friends"));
         contacts_recyles.add(new contacts_recyle(R.drawable.ic_group_chats,"Group Chats"));
         contacts_recyles.add(new contacts_recyle(R.drawable.ic_tags,"Tags"));
         contacts_recyles.add(new contacts_recyle(R.drawable.ic_official_accounts,"Official Accounts"));
-        return contacts_recyles;
+        for (int i = 0; i < 10; i++) {
+            contacts_recyles.add(new contacts_recyle(R.drawable.head_photo,"王教授"));
+        }
     }
 }
