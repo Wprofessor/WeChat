@@ -22,11 +22,6 @@ public class Chatsfragment extends Fragment {
     private ChatsAdapter chatsAdapter;
     private List<Chats_Recycle> chats_recycles;
 
-    private ImageView imageView;
-    private TextView textView_sign;
-    private TextView textView_content;
-    private TextView textView_time;
-
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -37,42 +32,7 @@ public class Chatsfragment extends Fragment {
         //设置recycleview的布局管理器
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
         recyclerView.setAdapter(chatsAdapter);
-
-        //始化控件
-        imageView = (ImageView)view.findViewById(R.id.chats_item_image);
-        textView_sign = (TextView)view.findViewById(R.id.chats_item_sign);
-        textView_content = (TextView)view.findViewById(R.id.chats_item_content);
-        textView_time = (TextView)view.findViewById(R.id.chats_item_time);
         return view;
-    }
-
-    @Override
-    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
-        super.onActivityCreated(savedInstanceState);
-        imageView.setOnClickListener(new OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(Chatsfragment.this,"敬请期待",Toast.LENGTH_SHORT).show();
-            }
-        });
-        textView_sign.setOnClickListener(new OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-            }
-        });
-        textView_content.setOnClickListener(new OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-            }
-        });
-        textView_time.setOnClickListener(new OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-            }
-        });
     }
 
 
