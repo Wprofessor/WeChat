@@ -22,7 +22,7 @@ public class SplashActivity extends AppCompatActivity{
             super.handleMessage(msg);
             switch (msg.what){
                 case 1:
-                    startActivity(new Intent(SplashActivity.this,MainActivity.class));
+                    startActivity(new Intent(SplashActivity.this,GuideActivity.class));
                     finish();
                     break;
             }

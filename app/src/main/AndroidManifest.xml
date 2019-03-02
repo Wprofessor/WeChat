@@ -21,8 +21,11 @@
             android:name=".WeChat"
             android:label="@string/title_activity_we_chat">
         </activity>
+        <activity android:name=".GuideActivity"/>
         <!---主页-->
         <activity android:name=".MainActivity"/>
+
+
     </application>
 
 </manifest>
